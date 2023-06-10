@@ -12,7 +12,7 @@ const HeaderCartButton=()=>{
                 Your Cart
             </span>
             <span className={classes.badge}>
-              0
+              
             </span>
         </button>
     )

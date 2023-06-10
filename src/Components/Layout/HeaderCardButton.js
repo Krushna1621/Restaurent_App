@@ -2,9 +2,9 @@ import React from "react";
 import CartIcon from "../Card/CartIcon";
 import classes from './HeaderCartButton.module.css';
 
-const HeaderCartButton=()=>{
+const HeaderCartButton=(props)=>{
     return(
-        <button className={classes.button}>
+        <button className={classes.button} onClick={props.onClick}>
             <span className={classes.icon}>
                 <CartIcon></CartIcon>
             </span>
@@ -12,7 +12,7 @@ const HeaderCartButton=()=>{
                 Your Cart
             </span>
             <span className={classes.badge}>
-              
+              3
             </span>
         </button>
     )
